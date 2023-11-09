@@ -5,7 +5,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hellow
-	hahaha
+	test
 </body>
 </html>
