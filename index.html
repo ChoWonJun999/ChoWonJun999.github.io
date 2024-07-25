@@ -3,73 +3,494 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <style>
-    .my-padding {
-        padding: 5em 10em 0em 10em;
+    .my-main-card {
+        min-height: 52em !important;
+    }
+
+    .my-card {
+        padding: 10px 0px 1px 0px !important;
+        margin: 0px !important;
+    }
+
+    .blockquote-footer::before {
+        content: "";
     }
 </style>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">이게 전데용~</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar bg-white fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"> Dropdown </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-        </nav>
-        <div class="container-fluid my-padding">
+        </div>
+    </nav>
+    <div class="container-sm" style="padding-top: 5em;">
+        <input type="hidden" name="" value="Title">
+        <div class="my-main-card shadow p-5 mb-5 bg-white rounded">
+            뭐라고 적을까아아앙아아ㅏㅇ
+            <br>
+            망러밍러ㅏㅣㅁㅇㄴㄹ
+        </div>
+    </div>
+    <div class="container-sm">
+        Infomation
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="my-card shadow bg-white rounded">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>Birthdate</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">1997.12.02</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="my-card shadow bg-white rounded">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>Phone</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">010-6668-8725</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="my-card shadow bg-white rounded">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>Email</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">dod875@hanmail.net</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col">
+                <div class="my-card shadow bg-white rounded">
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>GitHub</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title"><a href="https://github.com/ChoWonJun999">ChoWonJun999</a></cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-sm">
+        Skill
+        <div class="shadow p-5 mb-5 bg-white rounded">
+            <dl class="row">
+                <dt class="col-sm-3">Languages</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dd class="col-sm-8">JAVA, Python</dd>
+                    </dl>
+                </dd>
+                
+                <dt class="col-sm-3">IDE & Tools</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dd class="col-sm-8">Eclipse, PyCharm, Visual Studio Code, DBeaver</dd>
+                    </dl>
+                </dd>
+
+                <dt class="col-sm-3">Framework</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">EgovFramework</dt>
+                        <dd class="col-sm-8">
+                            <p>MVC 구조 생성 가능</p>
+                            <p>Tomcat을 통한 서버 연결 가능</p>
+                            <p>프로젝트 개발 가능</p>
+                            <p>DataBase 연동 가능</p>
+                        </dd>
+                        <dt class="col-sm-4">Django</dt>
+                        <dd class="col-sm-8">
+                            <p>MVT 구조 생성 가능</p>
+                            <p>sqlite, mysql 등의 Database 연동 가능</p>
+                            <p>Templates 및 기본 셋팅인 설정 원하는 경로로 변경 가능</p>
+                            <p>미들웨어 사용 가능</p>
+                            <p>makemigration/migrate 명령어 사용 가능</p>
+                            <p>ngrok를 이용한 외부 접속 가능한 로컬 네트워크 환경 구성 가능</p>
+                        </dd>
+                    </dl>
+                </dd>
+
+                <dt class="col-sm-3">DB</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">MySql</dt>
+                        <dd class="col-sm-8">
+                            <p>table DDL 가능</p>
+                            <p>processer, function, view 등은 명령어 검색 필수</p>
+                            <p>DML 가능 / join, union 사용 가능</p>
+                            <p>DCL 검색 필수</p>
+                        </dd>
+                    </dl>
+                </dd>
+
+                <dt class="col-sm-3">Web Servers</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">Apache Tomcat</dt>
+                        <dd class="col-sm-8">
+                            <p>간단한 연결 가능</p>
+                        </dd>
+                    </dl>
+                </dd>
+
+                <dt class="col-sm-3">Web Development</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">HTML</dt>
+                        <dd class="col-sm-8"></dd>
+                        <dt class="col-sm-4">JSP</dt>
+                        <dd class="col-sm-8"></dd>
+                        <dt class="col-sm-4">JavaScript</dt>
+                        <dd class="col-sm-8">
+                            <p>완벽하진 않지만 원하는 기능 구현 가능</p>
+                        </dd>
+                        <dt class="col-sm-4">AJAX</dt>
+                        <dd class="col-sm-8">
+                            <p>데이터 주고 받기 가능</p>
+                        </dd>
+                        <dt class="col-sm-4">jQuery</dt>
+                        <dd class="col-sm-8">
+                            <p>전부를 알고 있지 않지만 검색이 가능하다면 왠만한 기능 구현 가능</p>
+                        </dd>
+                        <dt class="col-sm-4">XML</dt>
+                        <dd class="col-sm-8">
+                            <p>전자정부프레임워크에서 vo 연결, 쿼리문 작성 가능</p>
+                        </dd>
+                    </dl>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="container-sm">
+        Introduce
+        <div class="shadow p-5 mb-5 bg-white rounded">
+            나는 나닷!
+        </div>
+    </div>
+    <div class="container-sm">
+        Project
+        <div class="shadow p-5 mb-5 bg-white rounded">
+            <dl class="row">
+                <dt class="col-sm-3">코인 자동매매 웹 프로그램 개발</dt>
+                <dd class="col-sm-9">
+                    <p>1인 개발</p>
+                    <p>upbit API 활용하여 코인 자동매매 프로그램 개발</p>
+                    <p>매매 내역 DB에 저장 후 웹 페이지에서 확인 가능</p>
+                    <p>웹 페이지에서 프로그램 제어 가능</p>
+                    <p>pyupbit 라이브러리 사용</p>
+                    <p>pyupbit 라이브러리 제거 중...</p>
+                </dd>
+                <dt class="col-sm-3">이미지 편집기</dt>
+                <dd class="col-sm-9">
+                    <p>2인 - 개발</p>
+                    <p>GUI에서 이미지를 불러와 텍스트 입력하여 텍스트와 결합된 이미지 추출 프로그램 개발</p>
+                </dd>
+                <dt class="col-sm-3">네이버 블로그 아이디 수집 프로그램</dt>
+                <dd class="col-sm-9">
+                    <p>2인 - 개발</p>
+                    <p>Python의 Selenium과 request를 이용한 네이버 블로그 아이디 수집 프로그램 개발</p>
+                </dd>
+                <dt class="col-sm-3">블로그 사용자 핸드폰 번호 추출</dt>
+                <dd class="col-sm-9">
+                    <p>2인 - 개발</p>
+                    <p>Python의 Selenium과 request를 이용한 네이버 블로그 아이디 수집 프로그램 개발</p>
+                </dd>
+                <dt class="col-sm-3">네이버 블로그 이웃 제거 프로그램</dt>
+                <dd class="col-sm-9">
+                    <p>2인 - 개발</p>
+                    <p>네이버 블로그 이웃 삭제 기능이 불편하게 이뤄져 있어 Selenium을 통한 이웃 제거 매크로 개발</p>
+                </dd>
+                <dt class="col-sm-3">엑셀 데이터 중복 제거 프로그램</dt>
+                <dd class="col-sm-9">
+                    <p>2인 - 개발</p>
+                    <p>GUI에서 엑셀 업로드 후 중복되는 데이터 제거 후 엑셀 다운 프로그램 개발</p>
+                </dd>
+                <dt class="col-sm-3">특정 이미지 인식을 통한 키 매크로</dt>
+                <dd class="col-sm-9">
+                    <p>2인 - 개발</p>
+                    <p>사용자가 설정한 단축키 입력 시 해당 페이지 내에서 특정 이미지 인식 후 클릭 매크로 개발</p>
+                </dd>
+                <dt class="col-sm-3">명령어를 통한 응답 봇 개발</dt>
+                <dd class="col-sm-9">
+                    <p>2인 - 개발</p>
+                    <p>모바일 어플인 ???을 이용</p>
+                    <p>JavaScript 언어로 특정 명령어 입력 받을 시 웹 페이지 데이터 추출 후 반환</p>
+                </dd>
+                <dt class="col-sm-3">숙박 예약 매크로 개발</dt>
+                <dd class="col-sm-9">
+                    <p>2인 - Python</p>
+                    <p>Selenium을 이용하여 다른 플랫폼의 예약 정보 크롤링 후 DB에 저장</p>
+                    <p>해당 데이터 기반으로 반대 플랫폼 예약 제어 매크로 동작</p>
+                    <p>데이터를 보여주는 웹 개발</p>
+                    <p>AWS를 통한 웹 서버 오픈</p>
+                </dd>
+                <dt class="col-sm-3">영상 다운로드 프로그램 개발</dt>
+                <dd class="col-sm-9">
+                    <p>1인 개발</p>
+                    <p>해당 영상의 ts 파일 주소 입력 후 해당 주소 기반으로 모든 ts 파일 다운로드</p>
+                    <p>다운된 영상 하나로 통합</p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="container-sm">
+        Education
+        <div class="shadow p-5 mb-5 bg-white rounded">
+            <dl class="row">
+                <dt class="col-sm-3">AIVLE School</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">코딩마스터즈 1차 (2024.03.04 ~ 2024.03.31)</dt>
+                        <dd class="col-sm-8">
+                            <p>51</p>
+                        </dd>
+                        <dt class="col-sm-4">코딩마스터즈 2차 (2024.05.07 ~ 2024.05.31)</dt>
+                        <dd class="col-sm-8">
+                            <p>100 그마</p>
+                        </dd>
+                    </dl>
+                    <dl class="row">
+                        <dt class="col-sm-4">스터디</dt>
+                        <dd class="col-sm-8">
+                            <p>강서구 공모전</p>
+                            <p>관광 데이터 활용 공모전 진행중...</p>
+                        </dd>
+                    </dl>
+                    <dl class="row">
+                        <dt class="col-sm-4">IT프로젝트 관리 도구 (GIT) (1일)</dt>
+                        <dd class="col-sm-8">
+                            <p>Visual Strdio Code 확장 프로그램인 Git Graph를 통한 기초 과정</p>
+                        </dd>
+                        <dt class="col-sm-4">Python 프로그래밍 & 라이브러리 (2일)</dt>
+                        <dd class="col-sm-8">
+                            <p>기초 강의</p>
+                            <p>ML/DL을 위환 라이브러리 위주 사용</p>
+                        </dd>
+                        <dt class="col-sm-4">데이터 처리 (2일)</dt>
+                        <dd class="col-sm-8">
+                            <p>데이터 처리리리리</p>
+                        </dd>
+                        <dt class="col-sm-4">데이터 분석 및 의미 찾기 (2일)</dt>
+                        <dd class="col-sm-8">
+                            <p>부우우우운석</p>
+                        </dd>
+                        <dt class="col-sm-4">미니프로젝트 1차 (3일)</dt>
+                        <dd class="col-sm-8">
+                            <p>데이터 처리 및 분석</p>
+                        </dd>
+                        <dt class="col-sm-4">웹 크롤링 (2일)</dt>
+                        <dd class="col-sm-8">
+                            <p>robots.txt</p>
+                        </dd>
+                        <dt class="col-sm-4">머신러닝 (5일)</dt>
+                        <dd class="col-sm-8">
+                            <p></p>
+                        </dd>
+                        <dt class="col-sm-4">미니프로젝트 2차 (3일)</dt>
+                        <dd class="col-sm-8">
+                            <p>데이터 처리, 분석 및 머신 러닝</p>
+                        </dd>
+                        <dt class="col-sm-4">딥러닝 (4일)</dt>
+                        <dd class="col-sm-8">
+                            <p></p>
+                        </dd>
+                        <dt class="col-sm-4">미니프로젝트 3차 (3일)</dt>
+                        <dd class="col-sm-8">
+                            <p>데이터 처리, 분석 및 머신 러닝/딥러닝 - 케글</p>
+                        </dd>
+                        <dt class="col-sm-4">시각지능 딥러닝 (5일)</dt>
+                        <dd class="col-sm-8">
+                            <p>CNN, YOLO</p>
+                        </dd>
+                        <dt class="col-sm-4">미니프로젝트 4차 (4일)</dt>
+                        <dd class="col-sm-8">
+                            <p>CNN</p>
+                            <p>YOLo</p>
+                        </dd>
+                        <dt class="col-sm-4">언어지능 딥러닝 (5일)</dt>
+                        <dd class="col-sm-8">
+                            <p>코사인 유사도</p>
+                            <p>RNN</p>
+                        </dd>
+                        <dt class="col-sm-4">미니프로젝트 5차 (2일)</dt>
+                        <dd class="col-sm-8">
+                            <p>시계열 데이터</p>
+                        </dd>
+                        <dt class="col-sm-4">미니프로젝트 6차 (6일)</dt>
+                        <dd class="col-sm-8">
+                            <p>미프가 미프가 아니였움</p>
+                        </dd>
+                        <dt class="col-sm-4">AIVEL Day 1차 (1일)</dt>
+                        <dd class="col-sm-8">
+                            <p>AI를 통한 쇼츠 생성</p>
+                        </dd>
+                        <dt class="col-sm-4">IT 인프라 (1일)</dt>
+                        <dd class="col-sm-8">
+                            <p>ngrok</p>
+                            <p>tmux</p>
+                            <p>aws 인스턴스 접속 후 ubuntu server 업로드</p>
+                        </dd>
+                        <dt class="col-sm-4">웹프로그래밍 (3일)</dt>
+                        <dd class="col-sm-8">
+                            <p>Flask</p>
+                        </dd>
+                        <dt class="col-sm-4">WEB/WAS/DB (2일)</dt>
+                        <dd class="col-sm-8">
+                            <p>MongoDB</p>
+                        </dd>
+                        <dt class="col-sm-4">SQL (1일)</dt>
+                        <dd class="col-sm-8">
+                            <p>workbench</p>
+                        </dd>
+                        <dt class="col-sm-4">Django활용 Web App 개발 (6일)</dt>
+                        <dd class="col-sm-8">
+                            <p>Django</p>
+                        </dd>
+                        <dt class="col-sm-4">가상화 클라우드 (5일)</dt>
+                        <dd class="col-sm-8">
+                            <p>AWS</p>
+                            <p>EC-2</p>
+                            <p>VPC</p>
+                            <p>Cloud9</p>
+                        </dd>
+                        <dt class="col-sm-4">미니프로젝트 7차 (7일)</dt>
+                        <dd class="col-sm-8">
+                            <p>모름</p>
+                        </dd>
+                        <dt class="col-sm-4">AIVLE Day 2차 (1일)</dt>
+                        <dd class="col-sm-8">
+                            <p>모름</p>
+                        </dd>
+                        <dt class="col-sm-4">빅프로젝트 (31일)</dt>
+                        <dd class="col-sm-8">
+                            <p>모름</p>
+                        </dd>
+                        <dt class="col-sm-4">빅프로젝트 발표회 (1일)</dt>
+                        <dd class="col-sm-8">
+                            <p>모름</p>
+                        </dd>
+                        <dt class="col-sm-4">???</dt>
+                        <dd class="col-sm-8">
+                            <p>모름</p>
+                        </dd>
+                    </dl>
+                </dd>
+            </dl>
+            <dl class="row">
+                <dt class="col-sm-3">기간</dt>
+                <dd class="col-sm-9">2024.02.18~ </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="container-sm">
+        Academy
+        <div class="shadow p-5 mb-5 bg-white rounded">
+            <dl class="row">
+                <dt class="col-sm-3">배재대학교</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">주 전공</dt>
+                        <dd class="col-sm-8">컴퓨터 수학과</dd>
+                        <dt class="col-sm-4">복수 전공</dt>
+                        <dd class="col-sm-8">경영학과</dd>
+                        <dt class="col-sm-4">졸업 학점</dt>
+                        <dd class="col-sm-8">4.25/4.5</dd>
+                        <dt class="col-sm-3">기간</dt>
+                        <dd class="col-sm-9">2016.03.02 ~ 2019.08.22 (조기 졸업)</dd>
+                    </dl>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="container-sm">
+        Career
+        <div class="shadow p-5 mb-5 bg-white rounded">
+            <dl class="row">
+                <dt class="col-sm-3">알앤디프로젝트</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">기간</dt>
+                        <dd class="col-sm-8">2020.04 ~ 2021.06</dd>
+                    </dl>
+                    <dl class="row">
+                        <dt class="col-sm-4">업무</dt>
+                        <dd class="col-sm-8">
+                            <p>전자정부프레임워크(ibatis)를 활용한 JAVA 기반 웹 프로그램(MES) 개발</p>
+                            <p>MariaDB, MySQL을 활용한 데이터 관리 및 연동</p>
+                            <p>Linux(Ubuntu)를 활용한 서비스 배포</p>
+                        </dd>
+                    </dl>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="container-sm">
+        자격증, 어학능력(있으면 당연히 좋음, 근데 전 없음)
+        <div class="shadow p-5 mb-5 bg-white rounded">
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                <li class="list-group-item">A fourth item</li>
-                <li class="list-group-item">And a fifth one</li>
+                <li class="list-group-item">정보 처리 기사 필기 합격 / 실기 결과 대기중</li>
+                <li class="list-group-item">AICE ASSOCIATE 신청</li>
             </ul>
         </div>
-        <div class="container-fluid my-padding">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
-                <li class="list-group-item">A fourth item</li>
-                <li class="list-group-item">And a fifth one</li>
-            </ul>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
