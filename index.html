@@ -17,13 +17,23 @@
             background-color: #f0f2f5;
         }
 
-        .my-main-card {
-            min-height: 52em !important;
-        }
-
         .my-card {
             padding: 10px 0px 1px 0px !important;
             margin: 0px !important;
+        }
+
+        .custom-container {
+            padding-top: 5em;
+        }
+
+        .my-main-card h1 {
+            font-size: 2.5rem;
+            /* 폰트 사이즈 조정 */
+        }
+
+        .my-main-card p {
+            font-size: 1.125rem;
+            /* 폰트 사이즈 조정 */
         }
     </style>
 </head>
@@ -39,10 +49,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#Infomation">Infomation</a>
+                        <a class="nav-link" href="#about">ABOUT ME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Stack">Technology Stack</a>
+                        <a class="nav-link" href="#skills">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Career">Career</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Project">Project</a>
@@ -50,105 +63,170 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#Education">Education</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Academy">Academy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Career">Career</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Certificate">Certificate</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <div data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         <div class="container-sm" style="padding-top: 5em;">
-            <input type="hidden" name="" value="Title">
-            <div class="my-main-card shadow p-5 mb-5 bg-white rounded">
-                조원준
-                <br>
-                백엔드 개발자 포트폴리오
+            <div class="my-main-card p-5 mb-5 shadow bg-white rounded">
+                <h1 class="display-3 fw-bold mb-4">안녕하세요! 백엔드 개발자 조원준입니다.</h1>
+                <p class="text-muted mb-4">
+                    저는 1년 간의 Java 웹 개발 경험과 다양한 Python 자동화 프로젝트를 통해 실력을 쌓아온 개발자입니다.<br>
+                    Java를 활용하여 안정적이고 효율적인 웹 애플리케이션을 구축했으며, Python을 통해 매크로 및 자동화 솔루션을 개발하여 작업의 효율성을 크게 향상시켰습니다.
+                </p>
+                <p class="text-muted mb-4">
+                    최근에는 부트캠프에서 Python을 활용한 웹 개발 기술과 AI 기초를 심도 있게 배우며 제 기술적 역량을 한층 더 확장하였습니다.<br>
+                    부트캠프에서는 웹 개발 프레임워크를 깊이 있게 다루었고, 이 지식은 웹 애플리케이션 개발에 대한 이해를 한층 더 높이는 데 큰 도움이 되었습니다.<br>
+                    또한, AI의 기초 이론과 기술을 배우면서 데이터 분석, 처리, 머신러닝 및 딥러닝의 기본 개념을 익혔습니다.
+                </p>
+                <p class="text-muted">
+                    비록 현재 제 포트폴리오에는 AI 기술이 직접적으로 적용된 프로젝트는 많지 않지만,<br>
+                    이러한 학습은 제 문제 해결 접근 방식과 기술적 시각을 넓히는 데 중요한 기여를 했습니다.<br>
+                    제 작업을 통해 웹 개발과 자동화의 혁신적인 가능성을 탐험해 보시기 바랍니다.<br>
+                    또한, 최근 배운 기술들이 실제 프로젝트에 어떻게 실질적으로 적용될 수 있는지 확인해 주세요.<br>
+                    여러분의 프로젝트와 아이디어를 함께 발전시킬 기회를 기다리겠습니다.
+                </p>
             </div>
         </div>
 
-        <div id="Infomation" class="container-sm mt-5">
-            <h2 class="text-center mb-4">Infomation</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="my-card shadow bg-white rounded">
-                        <figure class="text-center">
-                            <blockquote class="blockquote">
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
-                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5" />
-                                    </svg>
-                                    Birthdate
-                                </p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                                <cite title="Source Title">1997.12.02</cite>
-                            </figcaption>
-                        </figure>
+        <div id="about" class="container-sm mt-5">
+            <h2 class="text-center mb-4">
+                <a class="nav-link" href="#about">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                    </svg>
+                    ABOUT ME
+                </a>
+            </h2>
+            <div class="shadow bg-white rounded">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="my-card">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5" />
+                                        </svg>
+                                        Birthdate
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">1997.12.02</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="my-card shadow bg-white rounded">
-                        <figure class="text-center">
-                            <blockquote class="blockquote">
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                                    </svg>
-                                    Phone
-                                </p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                                <cite title="Source Title">010-6668-8725</cite>
-                            </figcaption>
-                        </figure>
+                    <div class="col">
+                        <div class="my-card">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                        </svg>
+                                        Phone
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">010-6668-8725</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="my-card shadow bg-white rounded">
-                        <figure class="text-center">
-                            <blockquote class="blockquote">
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                                    </svg>
-                                    Email
-                                </p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                                <cite title="Source Title">dod875@hanmail.net</cite>
-                            </figcaption>
-                        </figure>
+                    <div class="col">
+                        <div class="my-card">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                                        </svg>
+                                        Email
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">dod875@hanmail.net</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="my-card shadow bg-white rounded">
-                        <figure class="text-center">
-                            <blockquote class="blockquote">
-                                <p>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                                    </svg>
-                                    GitHub
-                                </p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                                <cite title="Source Title"><a href="https://github.com/ChoWonJun999">ChoWonJun999</a></cite>
-                            </figcaption>
-                        </figure>
+                    <div class="col">
+                        <div class="my-card">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                        </svg>
+                                        GitHub
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title"><a href="https://github.com/ChoWonJun999">ChoWonJun999</a></cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-card">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z" />
+                                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z" />
+                                        </svg>
+                                        Academy
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">
+                                        배재대학교(컴퓨터 수학과/경영학과)
+                                    </cite>
+                                </figcaption>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">
+                                        4.25/4.5 조기 졸업
+                                    </cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="my-card">
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
+                                        </svg>
+                                        Certificate
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="Source Title">정보 처리 기사</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="Stack" class="container mt-5">
-            <h2 class="text-center mb-4">Technology Stack</h2>
+        <div id="skills" class="container mt-5">
+            <h2 class="text-center mb-4">
+                <a class="nav-link" href="#skills">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                    </svg>
+                    SKILLS
+                </a>
+            </h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card mb-3">
@@ -179,8 +257,8 @@
                         <div class="card-header">Frameworks</div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">EgovFramework (한국의 공공기관용 프레임워크)</li>
-                                <li class="list-group-item">Django (Python 웹 프레임워크)</li>
+                                <li class="list-group-item">EgovFramework1</li>
+                                <li class="list-group-item">Django1</li>
                             </ul>
                         </div>
                     </div>
@@ -200,10 +278,10 @@
                         <div class="card-header">Web Servers</div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Apache Tomcat (Java 서블릿 컨테이너)</li>
+                                <li class="list-group-item">Apache Tomcat</li>
                                 <li class="list-group-item">AWS</li>
-                                <li class="list-group-item">nginx (고성능 웹 서버 및 리버스 프록시)</li>
-                                <li class="list-group-item">uWSGI (애플리케이션 서버 및 WSGI 서버)</li>
+                                <li class="list-group-item">nginx</li>
+                                <li class="list-group-item">uWSGI</li>
                             </ul>
                         </div>
                     </div>
@@ -215,7 +293,7 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">HTML</li>
                                 <li class="list-group-item">JavaScript</li>
-                                <li class="list-group-item">JSP (JavaServer Pages)</li>
+                                <li class="list-group-item">JSP</li>
                                 <li class="list-group-item">jQuery</li>
                                 <li class="list-group-item">AJAX</li>
                             </ul>
@@ -225,8 +303,82 @@
             </div>
         </div>
 
+        <div id="Career" class="container mt-5">
+            <h2 class="text-center mb-4">
+                <a class="nav-link" href="#Career">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                    </svg>
+                    Career
+                </a>
+            </h2>
+            <div class="card shadow-lg p-4 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <h3 class="card-title mb-3">알앤디프로젝트</h3>
+                    <h6 class="card-subtitle mb-4 text-muted">2020.04 ~ 2021.06 (약 13개월)</h6>
+
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <strong>주업무</strong>
+                        </div>
+                        <div class="col-md-9">
+                            <p class="mb-0">MES 프로그램 개발 및 인트라넷 웹 페이지 개발</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-md-3">
+                            <strong>기술 스택</strong>
+                        </div>
+                        <div class="col-md-9">
+                            <ul class="list-unstyled">
+                                <li><strong>운영체제:</strong> Windows</li>
+                                <li><strong>개발언어:</strong> Java, HTML, JavaScript, jQuery</li>
+                                <li><strong>프레임워크:</strong> 전자정부프레임워크</li>
+                                <li><strong>데이터베이스:</strong> MariaDB, MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <strong>상세 내용</strong>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="mb-4">
+                                <h5><strong>MES 프로그램 개발 (약 1~3개월)</strong></h5>
+                                <ul class="list-unstyled">
+                                    <li>중소기업 대상의 MES(Manufacturing Execution System) 프로그램을 4개 진행했습니다.</li>
+                                    <li>자재, 입고, 수주, 생산 등의 회사 고유 생산 과정을 바탕으로 새로운 기능을 개발했습니다.</li>
+                                    <li>Java, HTML, JavaScript, jQuery를 사용하여 백엔드와 프론트엔드 개발을 수행했습니다.</li>
+                                    <li>MariaDB 및 MySQL을 데이터베이스로 사용하며, Java와 전자정부프레임워크를 활용하여 서버 사이드 로직을 구현했습니다.</li>
+                                    <li>개발 환경은 Windows였으며, 서버 설정은 회사 내부 메뉴얼에 따라 진행했습니다.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5><strong>인트라넷 웹 페이지 유지보수 및 추가 기능 개발 (약 1개월)</strong></h5>
+                                <ul class="list-unstyled">
+                                    <li>유지 보수를 했으며 주로 결재 라인 담당했습니다.</li>
+                                    <li>추가 기능으로 구글 캘린더와 연동된 캘린더 기능을 구현했습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="Project" class="container-sm mt-5">
-            <h2 class="text-center mb-4">Project</h2>
+            <h2 class="text-center mb-4">
+                <a class="nav-link" href="#Project">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                    </svg>
+                    Project
+                </a>
+            </h2>
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card shadow mb-3 p-4 bg-white rounded">
@@ -475,7 +627,15 @@
         </div>
 
         <div id="Education" class="container-sm mt-5">
-            <h2 class="text-center mb-4">Education</h2>
+            <h2 class="text-center mb-4">
+                <a class="nav-link" href="#Education">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
+                    </svg>
+                    Education
+                </a>
+            </h2>
             <div class="card shadow-lg p-4 mb-5 bg-white rounded">
                 <div class="card-body">
                     <h3 class="card-title mb-3">AIVLE School</h3>
@@ -545,105 +705,15 @@
                 </div>
             </div>
         </div>
-        <div id="Academy" class="container-sm mt-5">
-            <h2 class="text-center mb-4">Academy</h2>
-            <div class="card shadow p-5 mb-5 bg-white rounded">
-                <dl class="row">
-                    <dt class="col-sm-3">배재대학교</dt>
-                    <dd class="col-sm-9">
-                        <dl class="row">
-                            <dt class="col-sm-4">주 전공</dt>
-                            <dd class="col-sm-8">컴퓨터 수학과</dd>
-                            <dt class="col-sm-4">복수 전공</dt>
-                            <dd class="col-sm-8">경영학과</dd>
-                            <dt class="col-sm-4">졸업 학점</dt>
-                            <dd class="col-sm-8">4.25/4.5</dd>
-                            <dt class="col-sm-3">기간</dt>
-                            <dd class="col-sm-9">2016.03.02 ~ 2019.08.22 (조기 졸업)</dd>
-                        </dl>
-                    </dd>
-                </dl>
-            </div>
-        </div>
-
-        <div id="Career" class="container mt-5">
-            <h2 class="text-center mb-4">Career</h2>
-            <div class="card shadow-lg p-4 mb-5 bg-white rounded">
-                <div class="card-body">
-                    <h3 class="card-title mb-3">알앤디프로젝트</h3>
-                    <h6 class="card-subtitle mb-4 text-muted">2020.04 ~ 2021.06 (약 13개월)</h6>
-
-                    <div class="row mb-4">
-                        <div class="col-md-3">
-                            <strong>주업무</strong>
-                        </div>
-                        <div class="col-md-9">
-                            <p class="mb-0">MES 프로그램 개발 및 인트라넷 웹 페이지 개발</p>
-                        </div>
-                    </div>
-
-                    <div class="row mb-4">
-                        <div class="col-md-3">
-                            <strong>기술 스택</strong>
-                        </div>
-                        <div class="col-md-9">
-                            <ul class="list-unstyled">
-                                <li><strong>운영체제:</strong> Windows</li>
-                                <li><strong>개발언어:</strong> Java, HTML, JavaScript, jQuery</li>
-                                <li><strong>프레임워크:</strong> 전자정부프레임워크</li>
-                                <li><strong>데이터베이스:</strong> MariaDB, MySQL</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-3">
-                            <strong>상세 내용</strong>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="mb-4">
-                                <h5><strong>MES 프로그램 개발 (약 1~3개월)</strong></h5>
-                                <ul class="list-unstyled">
-                                    <li>중소기업 대상의 MES(Manufacturing Execution System) 프로그램을 4개 진행했습니다.</li>
-                                    <li>자재, 입고, 수주, 생산 등의 회사 고유 생산 과정을 바탕으로 새로운 기능을 개발했습니다.</li>
-                                    <li>Java, HTML, JavaScript, jQuery를 사용하여 백엔드와 프론트엔드 개발을 수행했습니다.</li>
-                                    <li>MariaDB 및 MySQL을 데이터베이스로 사용하며, Java와 전자정부프레임워크를 활용하여 서버 사이드 로직을 구현했습니다.</li>
-                                    <li>개발 환경은 Windows였으며, 서버 설정은 회사 내부 메뉴얼에 따라 진행했습니다.</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h5><strong>인트라넷 웹 페이지 유지보수 및 추가 기능 개발 (약 1개월)</strong></h5>
-                                <ul class="list-unstyled">
-                                    <li>유지 보수를 했으며 주로 결재 라인 담당했습니다.</li>
-                                    <li>추가 기능으로 구글 캘린더와 연동된 캘린더 기능을 구현했습니다.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="Certificate" class="container-sm mt-5">
-            <h2 class="text-center mb-4">Certificate</h2>
-            <div class="card shadow p-4 mb-5 bg-white rounded">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">정보 처리 기사</li>
-                </ul>
-            </div>
-        </div>
     </div>
     <div class="container-fluid">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#Infomation" class="nav-link px-2 text-muted">Infomation</a></li>
-                <li class="nav-item"><a href="#Stack" class="nav-link px-2 text-muted">Technology Stack</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">ABOUT ME</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link px-2 text-muted">SKILLS</a></li>
+                <li class="nav-item"><a href="#Career" class="nav-link px-2 text-muted">Career</a></li>
                 <li class="nav-item"><a href="#Project" class="nav-link px-2 text-muted">Project</a></li>
                 <li class="nav-item"><a href="#Education" class="nav-link px-2 text-muted">Education</a></li>
-                <li class="nav-item"><a href="#Academy" class="nav-link px-2 text-muted">Academy</a></li>
-                <li class="nav-item"><a href="#Career" class="nav-link px-2 text-muted">Career</a></li>
-                <li class="nav-item"><a href="#Certificate" class="nav-link px-2 text-muted">Certificate</a></li>
             </ul>
             <p class="text-center text-muted">&copy; 2024 ChoWonJun. All rights reserved.</p>
         </footer>
