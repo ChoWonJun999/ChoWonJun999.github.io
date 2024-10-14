@@ -1,0 +1,33 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f0f2f5;
+}
+
+.my-card {
+  padding: 10px 0px 1px 0px !important;
+  margin: 0px !important;
+}
+
+.custom-container {
+  padding-top: 5em;
+}
+
+.my-main-card h1 {
+  font-size: 2.5rem;
+}
+
+.my-main-card p {
+  font-size: 1.125rem;
+}
+
+.container-sm {
+  margin-top: 5em;
+}
+
+.container-sm[id] {
+  scroll-margin-top: 5em;
+}

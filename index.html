@@ -11,41 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap">
 
     <title>Portfolio</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: #f0f2f5;
-        }
-
-        .my-card {
-            padding: 10px 0px 1px 0px !important;
-            margin: 0px !important;
-        }
-
-        .custom-container {
-            padding-top: 5em;
-        }
-
-        .my-main-card h1 {
-            font-size: 2.5rem;
-        }
-
-        .my-main-card p {
-            font-size: 1.125rem;
-        }
-
-        .container-sm {
-            margin-top: 5em;
-        }
-
-        .container-sm[id] {
-            scroll-margin-top: 5em;
-        }
-    </style>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 
@@ -104,10 +70,7 @@
         <div id="about" class="container-sm mt-5">
             <h2 class="text-center mb-4">
                 <a class="nav-link" href="#about">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                    </svg>
+                    <img src="svg/link.svg" alt="link">
                     ABOUT ME
                 </a>
             </h2>
@@ -118,9 +81,7 @@
                             <figure class="text-center">
                                 <blockquote class="blockquote">
                                     <p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-fill" viewBox="0 0 16 16">
-                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5" />
-                                        </svg>
+                                        <img src="svg/birthdate.svg" alt="birthdate">
                                         Birthdate
                                     </p>
                                 </blockquote>
@@ -135,9 +96,7 @@
                             <figure class="text-center">
                                 <blockquote class="blockquote">
                                     <p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                                        </svg>
+                                        <img src="svg/phone.svg" alt="phone">
                                         Phone
                                     </p>
                                 </blockquote>
@@ -152,9 +111,7 @@
                             <figure class="text-center">
                                 <blockquote class="blockquote">
                                     <p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                                        </svg>
+                                        <img src="svg/email.svg" alt="email">
                                         Email
                                     </p>
                                 </blockquote>
@@ -169,9 +126,7 @@
                             <figure class="text-center">
                                 <blockquote class="blockquote">
                                     <p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                                        </svg>
+                                        <img src="svg/github.svg" alt="github">
                                         GitHub
                                     </p>
                                 </blockquote>
@@ -186,10 +141,7 @@
                             <figure class="text-center">
                                 <blockquote class="blockquote">
                                     <p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
-                                            <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z" />
-                                            <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z" />
-                                        </svg>
+                                        <img src="svg/academy.svg" alt="academy">
                                         Academy
                                     </p>
                                 </blockquote>
@@ -211,9 +163,7 @@
                             <figure class="text-center">
                                 <blockquote class="blockquote">
                                     <p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
-                                            <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" />
-                                        </svg>
+                                        <img src="svg/certificate.svg" alt="certificate">
                                         Certificate
                                     </p>
                                 </blockquote>
@@ -230,10 +180,7 @@
         <div id="Skills" class="container mt-5">
             <h2 class="text-center mb-4">
                 <a class="nav-link" href="#Skills">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                    </svg>
+                    <img src="svg/link.svg" alt="link">
                     Skills
                 </a>
             </h2>
@@ -245,19 +192,8 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">Java</li>
                                 <li class="list-group-item">Python</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-3">
-                        <div class="card-header">IDE & Tools</div>
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Eclipse</li>
-                                <li class="list-group-item">PyCharm</li>
-                                <li class="list-group-item">Visual Studio Code</li>
-                                <li class="list-group-item">DBeaver</li>
+                                <li class="list-group-item">JavaScript</li>
+                                <li class="list-group-item">Html</li>
                             </ul>
                         </div>
                     </div>
@@ -269,6 +205,10 @@
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">EgovFramework</li>
                                 <li class="list-group-item">Django</li>
+                                <li class="list-group-item">Flask</li>
+                                <li class="list-group-item">Spring Boot</li>
+                                <li class="list-group-item">React</li>
+                                <li class="list-group-item">Vite</li>
                             </ul>
                         </div>
                     </div>
@@ -279,33 +219,19 @@
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">MySQL</li>
+                                <li class="list-group-item">MariaDB</li>
+                                <li class="list-group-item">SqLite</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card mb-3">
-                        <div class="card-header">Web Servers</div>
+                        <div class="card-header">ETC</div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Apache Tomcat</li>
                                 <li class="list-group-item">AWS</li>
-                                <li class="list-group-item">nginx</li>
-                                <li class="list-group-item">uWSGI</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-3">
-                        <div class="card-header">Web Development</div>
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">HTML</li>
-                                <li class="list-group-item">JavaScript</li>
-                                <li class="list-group-item">JSP</li>
-                                <li class="list-group-item">jQuery</li>
-                                <li class="list-group-item">AJAX</li>
+                                <li class="list-group-item">Git</li>
                             </ul>
                         </div>
                     </div>
@@ -316,10 +242,7 @@
         <div id="Career" class="container mt-5">
             <h2 class="text-center mb-4">
                 <a class="nav-link" href="#Career">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                    </svg>
+                    <img src="svg/link.svg" alt="link">
                     Career
                 </a>
             </h2>
@@ -382,10 +305,7 @@
         <div id="Project" class="container-sm mt-5">
             <h2 class="text-center mb-4">
                 <a class="nav-link" href="#Project">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                    </svg>
+                    <img src="svg/link.svg" alt="link">
                     Project
                 </a>
             </h2>
@@ -395,12 +315,12 @@
                         <div class="row g-0">
                             <!-- <img src="..." class="card-img-top" alt="..."> -->
                             <div class="card-body">
-                                <h5 class="card-title">코인 자동매매 웹 프로그램 개발 - Renewing...</h5>
+                                <h5 class="card-title">CAT - Renewing...</h5>
                                 <h6 class="card-subtitle mb-4 text-muted">1人 프로젝트</h6>
                                 <h6 class="card-subtitle mb-4 text-muted">
                                     Upbit API를 활용하여 비트코인 자동매매 시스템을 개발하고, Django 웹 애플리케이션을 통해 사용자에게 매매 정보를 시각화하는 프로젝트입니다.
                                 </h6>
-                                <p class="card-text"><strong>주요 기능</strong></p>
+                                <p class="card-text"><strong><strong>주요 기능</strong></strong></p>
                                 <p class="card-text">
                                     <strong>회원 가입 및 정보 관리:</strong> Django를 이용한 사용자 계정 관리<br>
                                     <strong>자동매매 알고리즘:</strong> Upbit API와 Python을 활용하여 변동성 전략, 볼린저 밴드, 이동평균선 기반의 비트코인 매매 로직 구현<br>
@@ -408,7 +328,7 @@
                                     <strong>거래 내역 저장:</strong> MySQL을 사용하여 거래 내역 데이터베이스 관리<br>
                                     <strong>프로그램 제어:</strong> 웹 페이지에서 자동매매 프로그램 제어 및 설정 조정 가능
                                 </p>
-                                <p class="card-text"><strong>Skills:</strong> Python, Django, MySQL</p>
+                                <p class="card-text"><strong>Skills:</strong> Django, React, MySQL</p>
                                 <p class="card-text"><small class="text-body-secondary"> Coming Soon</small></p>
                             </div>
                         </div>
@@ -424,7 +344,7 @@
                                 <h6 class="card-subtitle mb-4 text-muted">
                                     GUI를 통해 이미지를 불러오고, 텍스트를 입력하여 텍스트가 결합된 이미지를 추출하는 프로그램입니다.
                                 </h6>
-                                <p class="card-text"><strong>주요 기능</strong></p>
+                                <p class="card-text"><strong><strong>주요 기능</strong></strong></p>
                                 <p class="card-text">
                                     <strong>사진 업로드:</strong> 사용자 인터페이스를 통해 이미지 파일을 쉽게 불러오기<br>
                                     <strong>사진 저장:</strong> 편집된 이미지를 저장할 수 있는 기능<br>
@@ -451,7 +371,7 @@
                                     엑셀 파일을 업로드하여 검색명, 기간, 수량의 정보를 입력받고,
                                     이 정보를 바탕으로 크롤링하여 결과를 엑셀 파일로 추출하는 프로그램입니다.
                                 </h6>
-                                <p class="card-text">주요 기능</p>
+                                <p class="card-text"><strong>주요 기능</strong></p>
                                 <p class="card-text">
                                     <strong>사진 업로드:</strong> 사용자 인터페이스를 통해 이미지 파일을 쉽게 불러오기<br>
                                     <strong>정보 수집:</strong> 업로드된 정보를 기반으로 네이버 블로그에서 데이터 크롤링<br>
@@ -475,7 +395,7 @@
                                     Tkinter와 PyQt5를 활용하여 GUI를 개발하였으며,
                                     사용자가 다양한 추출 옵션을 선택하고 실시간으로 크롤링 정보를 확인할 수 있는 기능을 제공하는 프로그램입니다.
                                 </h6>
-                                <p class="card-text">주요 기능</p>
+                                <p class="card-text"><strong>주요 기능</strong></p>
                                 <p class="card-text">
                                     <strong>GUI 개발:</strong> Tkinter와 PyQt5를 활용하여 사용자 인터페이스 구축<br>
                                     <strong>추출 옵션 선택:</strong> 핸드폰 번호(010), 지역 번호, 특수 번호, 5일 평균 방문자 수, 블로거 추출 개수, 블로거 최대 페이지, 검색 옵션<br>
@@ -500,7 +420,7 @@
                                     Selenium을 사용하여 네이버 블로그에서 이웃을 자동으로 제거하는 매크로를 개발했습니다.
                                     사용자 친화적인 GUI를 통해 엑셀에서 이웃 아이디를 업로드하고, 이웃 제거 작업을 쉽게 수행할 수 있도록 개발한 프로그램입니다.
                                 </h6>
-                                <p class="card-text">주요 기능</p>
+                                <p class="card-text"><strong>주요 기능</strong></p>
                                 <p class="card-text">
                                     <strong>이웃 제거 매크로:</strong> Selenium을 이용하여 네이버 블로그의 이웃 제거 작업 자동화<br>
                                     <strong>GUI 개발:</strong> Tkinter와 PyQt5를 활용하여 사용자 인터페이스 구축<br>
@@ -524,7 +444,7 @@
                                 <h6 class="card-subtitle mb-4 text-muted">
                                     GUI를 통해 엑셀 파일을 업로드하고 중복된 데이터를 제거한 후, 정제된 데이터를 엑셀 파일로 저장하는 기능을 제공하는 프로그램입니다.
                                 </h6>
-                                <p class="card-text">주요 기능</p>
+                                <p class="card-text"><strong>주요 기능</strong></p>
                                 <p class="card-text">
                                     <strong>엑셀 업로드:</strong> GUI에서 엑셀 파일을 업로드<br>
                                     <strong>중복 데이터 제거:</strong> 선택된 필드를 기준으로 중복된 행을 제거<br>
@@ -547,7 +467,7 @@
                                     사용자가 설정한 단축키를 입력하면 해당 페이지 내에서 특정 이미지를 인식하고 클릭하는 매크로를 구현했습니다.
                                     GUI를 통해 사용자로부터 필요한 설정을 입력받고, 이미지 인식을 통해 자동으로 클릭 작업을 수행하는 프로그램입니다.
                                 </h6>
-                                <p class="card-text">주요 기능</p>
+                                <p class="card-text"><strong>주요 기능</strong></p>
                                 <p class="card-text">
                                     <strong>단축키 설정:</strong> 사용자가 설정한 단축키 입력 시 매크로 작동<br>
                                     <strong>이미지 인식:</strong> 스크린샷을 통해 특정 숫자 이미지를 인식<br>
@@ -571,7 +491,7 @@
                                     모바일 앱 플레이어 환경에서 카카오톡 단체 채팅방에 메신저 봇을 구현했습니다.
                                     JavaScript를 사용하여 명령어를 처리하고, 특정 명령어 입력 시 데이터를 크롤링하여 답장하는 기능을 제공하는 프로그램입니다.
                                 </h6>
-                                <p class="card-text">주요 기능</p>
+                                <p class="card-text"><strong>주요 기능</strong></p>
                                 <p class="card-text">
                                     <strong>메신저 봇 개발:</strong> 모바일 어플인 메신저봇R을 활용하여 카카오톡 단체 채팅방에서 동작하는 봇 구현<br>
                                     <strong>명령어 처리:</strong> "||명령어" 형식의 명령어를 통해 기능 수행<br>
@@ -598,7 +518,7 @@
                                     크롤링된 데이터를 시각화하고 웹에서 관리할 수 있는 기능을 제공하는 프로그램입니다.
                                     AWS를 사용하여 웹 서버를 운영하고 있습니다.
                                 </h6>
-                                <p class="card-text">주요 기능</p>
+                                <p class="card-text"><strong>주요 기능</strong></p>
                                 <p class="card-text">
                                     <strong>예약 정보 크롤링:</strong> Selenium을 이용하여 다양한 숙박 예약 플랫폼에서 예약 정보를 크롤링하고 데이터베이스에 저장<br>
                                     <strong>예약 제어 매크로:</strong> 크롤링된 데이터를 기반으로 다른 플랫폼에서 예약을 자동으로 제어하는 매크로 동작<br>
@@ -622,7 +542,7 @@
                                     입력된 TS 파일 주소를 기반으로 해당 영상의 모든 TS 파일을 다운로드하고,
                                     다운로드한 파일을 하나의 완성된 영상 파일로 통합하는 프로그램을 개발했습니다.
                                 </h6>
-                                <p class="card-text">주요 기능</p>
+                                <p class="card-text"><strong>주요 기능</strong></p>
                                 <p class="card-text">
                                     <strong>TS 파일 다운로드:</strong> 입력된 TS 파일 주소를 통해 모든 TS 파일을 다운로드<br>
                                     <strong>영상 통합:</strong> 다운로드한 TS 파일들을 하나의 영상 파일로 통합<br>
@@ -633,16 +553,59 @@
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card shadow mb-3 p-4 bg-white rounded">
+                        <div class="row g-0">
+                            <!-- <img src="..." class="card-img-top" alt="..."> -->
+                            <div class="card-body">
+                                <h5 class="card-title">EZCS</h5>
+                                <h6 class="card-subtitle mb-4 text-muted">24.06~08</h6>
+                                <h6 class="card-subtitle mb-4 text-muted">8人 프로젝트</h6>
+                                <h6 class="card-subtitle mb-4 text-muted">
+                                    GPT를 활용하여 상담사 어시스턴스 웹 프로젝트
+                                </h6>
+                                <p class="card-text"><strong>주요 기능</strong></p>
+                                <p class="card-text">
+                                    <strong>상담 페이지:</strong> 상담 시 GPT를 활용하여 고객의 음성을 텍스트로 변환, 비속어 처리; 고객의 질문에 맞는 추천 답변<br>
+                                    <strong>교육 페이지:</strong> GPT를 활용하여 상담 모의 교육<br>
+                                </p>
+                                <p class="card-text"><strong>Skills:</strong> Django</p>
+                                <p class="card-text"><small class="text-body-secondary"><a href="https://github.com/ChoWonJun999/EZCS.git">GitHub 바로가기</a></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow mb-3 p-4 bg-white rounded">
+                        <div class="row g-0">
+                            <!-- <img src="..." class="card-img-top" alt="..."> -->
+                            <div class="card-body">
+                                <h5 class="card-title">이대로 가유</h5>
+                                <h6 class="card-subtitle mb-4 text-muted">24.08~10.12</h6>
+                                <h6 class="card-subtitle mb-4 text-muted">5人 프로젝트</h6>
+                                <h6 class="card-subtitle mb-4 text-muted">
+                                    대전 여행 경로 추천 웹 프로젝트
+                                </h6>
+                                <p class="card-text"><strong>주요 기능</strong></p>
+                                <p class="card-text">
+                                    <strong>여행 경로 추천:</strong> 공공 데이터 포털에서 받아온 데이터 중 사용자가 선택한 테마에 맞는 경로 추천<br>
+                                    <strong>여행 경로 게시물:</strong> 사용자가 설정한 여행 경로를 다른 사용자에게 보여주며 좋아요/저장<br>
+                                </p>
+                                <p class="card-text"><strong>Skills:</strong> Spring Boot, Vite, Flask, MySQL, AWS</p>
+                                <p class="card-text"><strong>Frontend:</strong> <small class="text-body-secondary"><a href="https://github.com/ChoWonJun999/gayou-frontend.git">GitHub 바로가기</a></small></p>
+                                <p class="card-text"><strong>Backend(Spring Boot):</strong> <small class="text-body-secondary"><a href="https://github.com/ChoWonJun999/gayou-backend.git">GitHub 바로가기</a></small></p>
+                                <p class="card-text"><strong>Backend(Flask):</strong> <small class="text-body-secondary"><a href="https://github.com/ChoWonJun999/gayou-backend-flask.git">GitHub 바로가기</a></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div id="Education" class="container-sm mt-5">
             <h2 class="text-center mb-4">
                 <a class="nav-link" href="#Education">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
-                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z" />
-                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z" />
-                    </svg>
+                    <img src="svg/link.svg" alt="link">
                     Education
                 </a>
             </h2>
